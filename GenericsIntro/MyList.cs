@@ -8,7 +8,7 @@ namespace GenericsIntro // Calisacagimiz ozel bir type olacagini belirtiyoruz
     {
         // string[] items;
         T[] items;
-        //constructor  -- ctor 2 tab olusuyor
+        //constructor  -- ctor 2 tab olusuyor  -- class ile ayni isimde olur
         //constructor -> bir class new lendiginde calisan method
         public MyList()
         {
@@ -20,6 +20,26 @@ namespace GenericsIntro // Calisacagimiz ozel bir type olacagini belirtiyoruz
         {
             T[] tempArray = items;    // tempArray - gecici array
             items = new T[items.Length+1];
+
+            
+            for (int i = 0; i < tempArray.Length; i++) 
+            {
+                items[i] = tempArray[i];   
+               // tempArray icindeki elemanlari items geri vermek icin for dongusu yaptik
+            }
+
+            items[items.Length - 1] = item;
+
+        }
+
+        public int Length 
+        {
+            get { return items.Length; }
+        }
+
+        public T[] Items 
+        {
+            get { return items; }
         }
     }
 }
