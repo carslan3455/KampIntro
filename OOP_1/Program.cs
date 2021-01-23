@@ -36,11 +36,11 @@ namespace OOP_1
             // diziler, class, abstract class, interface ... referans type  -> atamalar adres uzerinden
 
 
-            productManager.Topla2(3, 6);   // bu method void gidip islemi yapip yazdirmak gorevi var
+            //productManager.Topla2(3, 6);   // bu method void gidip islemi yapip yazdirmak gorevi var
 
-            int toplamaSonucu = productManager.Topla(3, 6);  // bu methodda gidip geldikten sonra gelecek sonuc ile islem yapmak istiyorsak return type yaiyoruz
+            //int toplamaSonucu = productManager.Topla(3, 6);  // bu methodda gidip geldikten sonra gelecek sonuc ile islem yapmak istiyorsak return type yaiyoruz
               // uzerinde calisacagimiz bir veriye ihtiyacimiiz varsa return olan method kullanmis oluyoruz...
-            Console.WriteLine(toplamaSonucu*2);
+            //Console.WriteLine(toplamaSonucu*2);
 
 
 
